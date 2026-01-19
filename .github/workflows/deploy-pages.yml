@@ -2,7 +2,7 @@ name: Deploy MCP Registry Pages
 on:
   push:
     branches:
-      - main
+      - master
 permissions:
   contents: read
   pages: write
