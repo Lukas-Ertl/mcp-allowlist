@@ -10,3 +10,4 @@ Statische MCP-Registry im JSON-Format (Schema v0.1) als Allowlist für GitHub Co
 - Jeder Push auf `main` deployt den Inhalt von `v0.1` nach GitHub Pages.
 - Workflow: `.github/workflows/deploy-pages.yml`.
 
+
