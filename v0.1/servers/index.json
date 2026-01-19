@@ -21,11 +21,11 @@
           "url": "https://github.com/microsoft/playwright-mcp",
           "source": "github"
         },
-        "version": "latest",
+        "version": "0.0.1-seed",
         "packages": [
           {
-            "identifier": "@playwright/mcp",
-            "version": "latest",
+            "identifier": "microsoft/playwright-mcp",
+            "version": "0.0.1-seed",
             "registryType": "npm",
             "runtimeHint": "npx",
             "transport": {
