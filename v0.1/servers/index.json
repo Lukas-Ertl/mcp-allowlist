@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "v0.1",
+  "servers": [
+    {
+      "name": "io.github.microsoft/playwright-mcp",
+      "description": "Official Microsoft Playwright MCP server",
+      "repository": {
+        "type": "github",
+        "url": "https://github.com/microsoft/playwright-mcp"
+      },
+      "version": "latest",
+      "packages": [
+        {
+          "registryType": "npm",
+          "identifier": "@playwright/mcp",
+          "version": "latest",
+          "transport": { "type": "stdio" }
+        }
+      ]
+    }
+  ]
+}
