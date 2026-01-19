@@ -11,7 +11,7 @@
       "version": "0.0.1-seed",
       "packages": [
         {
-          "identifier": "microsoft/playwright-mcp",
+          "identifier": "@playwright/mcp",
           "version": "0.0.1-seed",
           "registryType": "npm",
           "runtimeHint": "npx",
