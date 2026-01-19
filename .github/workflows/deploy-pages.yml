@@ -17,6 +17,13 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
       
+      - name: Ensure _headers file exists
+        run: |
+          echo "/*.json" > _headers
+          echo "  Content-Type: application/json; charset=utf-8" >> _headers
+          echo "/v0.1/servers/*" >> _headers
+          echo "  Content-Type: application/json; charset=utf-8" >> _headers
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

@@ -1,0 +1,5 @@
+/*.json
+  Content-Type: application/json; charset=utf-8
+
+/v0.1/servers/*
+  Content-Type: application/json; charset=utf-8
