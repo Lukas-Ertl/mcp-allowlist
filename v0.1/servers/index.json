@@ -1,23 +1,79 @@
 {
-  "schemaVersion": "v0.1",
   "servers": [
     {
-      "name": "microsoft/playwright-mcp",
-      "description": "Automate web browsers using accessibility trees for testing and data extraction.",
-      "repository": {
-        "source": "github",
-        "url": "https://github.com/microsoft/playwright-mcp"
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "github-mcp-server",
+        "title": "GitHub",
+        "description": "Access GitHub repositories, issues, and pull requests through secure API integration.",
+        "version": "Original",
+        "remotes": [
+          {
+            "type": "sse",
+            "url": "https://api.githubcopilot.com/mcp"
+          }
+        ]
       },
-      "version": "0.0.1-seed",
-      "packages": [
-        {
-          "identifier": "@playwright/mcp",
-          "version": "0.0.1-seed",
-          "registryType": "npm",
-          "runtimeHint": "npx",
-          "transport": { "type": "stdio" }
-        }
-      ]
+      "_meta": {
+        "io.modelcontextprotocol.registry/official": {
+          "status": "active",
+          "createdAt": "2026-01-16T13:00:52.9216396+00:00",
+          "updatedAt": "2026-01-16T13:00:59.3966112+00:00",
+          "isLatest": true
+        },
+        "x-ms-id": "14778378-0c26-47fc-ad3b-489c78c39ba2"
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "msdocs-mcp-server",
+        "title": "Microsoft docs",
+        "description": "AI assistant with real-time access to official Microsoft documentation.",
+        "version": "Original",
+        "remotes": [
+          {
+            "type": "sse",
+            "url": "https://learn.microsoft.com/api/mcp"
+          }
+        ]
+      },
+      "_meta": {
+        "io.modelcontextprotocol.registry/official": {
+          "status": "active",
+          "createdAt": "2026-01-19T08:26:00.7276868+00:00",
+          "updatedAt": "2026-01-19T08:26:09.9849231+00:00",
+          "isLatest": true
+        },
+        "x-ms-id": "0bb51c38-546c-4e54-837c-8aec603e397d"
+      }
+    },
+    {
+      "server": {
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "playwright-mcp-server",
+        "title": "Playwright",
+        "description": "Automate web browsers using accessibility trees for testing, scraping and data extraction.",
+        "version": "Original",
+        "remotes": [
+          {
+            "type": "sse",
+            "url": "http://localhost:8931"
+          }
+        ]
+      },
+      "_meta": {
+        "io.modelcontextprotocol.registry/official": {
+          "status": "active",
+          "createdAt": "2026-02-06T10:00:00.0000000+00:00",
+          "updatedAt": "2026-02-06T10:00:00.0000000+00:00",
+          "isLatest": true
+        },
+        "x-ms-id": "playwright-mcp-local"
+      }
     }
-  ]
+  ],
+  "metadata": {
+    "count": 3
+  }
 }
