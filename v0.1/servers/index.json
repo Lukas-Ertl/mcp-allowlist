@@ -50,31 +50,34 @@
     },
     {
       "server": {
-        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-        "name": "playwright-mcp-server",
-        "title": "Playwright",
-        "description": "Automate web browsers using accessibility trees for testing, scraping and data extraction.",
-        "version": "Original",
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+        "description": "Automate web browsers using accessibility trees for testing and data extraction.",
+        "name": "microsoft/playwright-mcp",
         "packages": [
           {
-            "registry_name": "npm",
-            "name": "@playwright/mcp",
-            "version": "latest",
-            "runtime": "node",
-            "runtime_arguments": [],
-            "package_arguments": ["--port", "8931"],
-            "environment_variables": []
+            "identifier": "@playwright/mcp",
+            "registryType": "npm",
+            "runtimeHint": "npx",
+            "transport": {
+              "type": "stdio"
+            },
+            "version": "latest"
           }
-        ]
+        ],
+        "repository": {
+          "id": "952688112",
+          "source": "github",
+          "url": "https://github.com/microsoft/playwright-mcp"
+        },
+        "version": "0.0.1-seed"
       },
       "_meta": {
         "io.modelcontextprotocol.registry/official": {
+          "isLatest": true,
+          "publishedAt": "2025-09-09T10:55:23Z",
           "status": "active",
-          "createdAt": "2026-02-06T10:00:00.0000000+00:00",
-          "updatedAt": "2026-02-06T10:00:00.0000000+00:00",
-          "isLatest": true
-        },
-        "x-ms-id": "playwright-mcp-local"
+          "updatedAt": "2026-01-18T07:47:35Z"
+        }
       }
     },
     {
