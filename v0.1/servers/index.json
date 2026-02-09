@@ -55,10 +55,15 @@
         "title": "Playwright",
         "description": "Automate web browsers using accessibility trees for testing, scraping and data extraction.",
         "version": "Original",
-        "remotes": [
+        "packages": [
           {
-            "type": "sse",
-            "url": "http://localhost:8931"
+            "registry_name": "npm",
+            "name": "@playwright/mcp",
+            "version": "latest",
+            "runtime": "node",
+            "runtime_arguments": [],
+            "package_arguments": [],
+            "environment_variables": []
           }
         ]
       },
