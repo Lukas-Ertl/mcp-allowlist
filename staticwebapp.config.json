@@ -1,0 +1,14 @@
+{
+  "routes": [
+    {
+      "route": "/v0.1/servers",
+      "rewrite": "/v0.1/servers/index.json"
+    }
+  ],
+  "globalHeaders": {
+    "Cache-Control": "no-store"
+  },
+  "mimeTypes": {
+    ".json": "application/json; charset=utf-8"
+  }
+}
